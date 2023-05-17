@@ -42,13 +42,19 @@ public class VariablesPractice {
 		age++;  //age = age + 1;
 		System.out.println(age);
 
+		
         //6. Decrement your age by 1
 		age--;
 		System.out.println(age);
 		
 		
-		
-		
+		//7. Exponents 
+		System.out.println(Math.pow(2, 3));
+		System.out.println(Math.pow(4, 0.5));
+		System.out.println(Math.pow(2.5, 2));
+		System.out.println(Math.pow(2.5, -2));
+
+
 		
 		
 		
