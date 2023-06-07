@@ -4,7 +4,7 @@ public class MethodParameters {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String username, userPin;
-//		int num1, num2;
+		int num1, num2;
 //		
 //		System.out.print("Enter number: ");
 //		num1 = input.nextInt();
@@ -23,8 +23,19 @@ public class MethodParameters {
 //		userPin = input.nextLine();
 //		
 //		userCheck(username, userPin);
+//		
+//		inchesToCm(2.45);
 		
-		inchesToCm(2.45);
+		num1 = 5;
+		num2 = 35;
+		
+		System.out.println("before method: " + num1 + " " + num2);
+
+		switchValues(num1, num2);
+		
+		System.out.println("after method: " + num1 + " " + num2);
+
+		
 	}
 
 	public static void add(int x, int y) {
@@ -59,8 +70,20 @@ public class MethodParameters {
 		double cm;
 		cm = inches * 2.54;
 		
-		System.out.println("conversion is " + cm + "cms" );
+		System.out.println("conversion is " + cm + "cms" );	
+	}
+	
+	public static void switchValues(int num1, int num2) {
+		System.out.println("Method before swap: " + num1 + " " + num2);
 		
+		num1 = 88;
+		num2 = 99;
+//		int temp = num1;
+//		num1 = num2;
+//		num2 =temp;
+		
+		System.out.println("Method after swap: " + num1 + " " + num2);
+
 	}
 	
 	
