@@ -12,7 +12,7 @@ public class CourseTest {
 		
 		Student[] classlist = c1.getStudents();
 		
-		for (int i = 0; i <= c1.getNumberOfStudents(); i ++) {
+		for (int i = 0; i < c1.getNumberOfStudents(); i ++) {
 			System.out.println(classlist[i].getStudentNumber() + 
 					" " + classlist[i].getName());
 		}
