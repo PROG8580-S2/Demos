@@ -26,8 +26,53 @@ public class ShapeTest {
 		
 		System.out.println("Circle creator: " + c1.getCreatedBy());
 		System.out.println("Rect. creator: " + r1.getCreatedBy());
+		System.out.println(c1.toString());
+		System.out.println(r1.toString());
+
+		// Create a circle and rectangle with a size, colour, and fill
+		Circle c2 = new Circle(5, "Red", true);
+		Rectangle r2 = new Rectangle (7, 9, "Yellow", false);
 		
+		// Create displayObject method that accepts a 
+	    // GeometricObject and then call it on c2 and r2
+		displayObject(c2);
+		displayObject(r2);
 		
+		// Create another displayObject method, this time accepting an Object
+		Object o1 = new Circle(4);
+		Object o2 = new Rectangle(5, 7);
+		
+		displayObject(o1);
+		displayObject(o2);
+	
 	}
 
+	public static void displayObject(GeometricObject g) {
+		System.out.println("\nCreated on: " + g.getDateCreated());
+		System.out.println("Colour: " + g.getColor());
+		System.out.println("Filled: " + g.isFilled());
+	}
+	
+	public static void displayObject(Object object) {
+		if (object instanceof Circle) {
+			Circle c = (Circle)object;
+			System.out.println("Circle Area: " + c.getArea());
+		} else if (object instanceof Rectangle) {
+			System.out.println("Rectangle Area: " + ((Rectangle)object).getArea());
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

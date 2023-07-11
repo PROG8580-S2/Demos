@@ -45,5 +45,15 @@ public class Circle extends GeometricObject {
 		System.out.println("The circle is created " + getDateCreated() + "\nand the radius is " + radius);
 	}
 	
-	//toString() method to be created later
+	@Override
+	public String toString() {
+		return "Circle with radius  " + radius;
+	}
+	
+	
+	
+	
+	
+	
+	
 }

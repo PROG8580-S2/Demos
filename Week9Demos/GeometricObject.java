@@ -5,13 +5,13 @@ public class GeometricObject {
 	private boolean filled;
 	private Date dateCreated;
 	private String createdBy;
-	
+
 	// default constructor
 	public GeometricObject() {
 		dateCreated = new Date();
 	}
 
-	//non-default constructor
+	// non-default constructor
 	public GeometricObject(String color, boolean filled) {
 		dateCreated = new Date();
 		this.color = color;
@@ -37,16 +37,19 @@ public class GeometricObject {
 	public Date getDateCreated() {
 		return dateCreated;
 	}
-	
+
 	public String getCreatedBy() {
 		return createdBy;
 	}
-	
+
 	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
 	}
-	
-	
 
-	//toString() method to be created later
+	// toString() method to be created later
+	@Override
+	public String toString() {
+		return "created on " + dateCreated + " by " + createdBy;
+	}
+
 }
